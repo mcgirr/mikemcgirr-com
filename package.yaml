@@ -1,9 +1,13 @@
 name: mikemcgirr-com
 version: '0.1.0.0'
-license: UnspecifiedLicense
+author: Mike McGirr
+maintainer: mike@oatsmail.com
+license: GPL-3
+
 dependencies:
-- base ==4.*
-- hakyll ==4.9.*
+  - base ==4.*
+  - hakyll ==4.9.*
+
 executables:
   site:
     main: site.hs

@@ -1,0 +1,10 @@
+name: mikemcgirr-com
+version: '0.1.0.0'
+license: UnspecifiedLicense
+dependencies:
+- base ==4.*
+- hakyll ==4.9.*
+executables:
+  site:
+    main: site.hs
+    ghc-options: -threaded

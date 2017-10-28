@@ -54,3 +54,9 @@ article .header {
     font-weight: bold;
     text-decoration: none;
 }
+
+.profile-image {
+    height: 20em;
+    /* round the image corners */
+    border-radius: 1rem 1rem 1rem 1rem;
+}

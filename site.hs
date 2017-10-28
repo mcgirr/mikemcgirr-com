@@ -11,11 +11,15 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "static/*" $ do
+        route   idRoute -- preserve directory and name
+        compile copyFileCompiler -- don't alter the contents of the file
+
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["about.rst", "contact.markdown"]) $ do
+    match (fromList ["contact.markdown"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
@@ -42,6 +46,17 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+    match "about.html" $ do
+        route idRoute
+        compile $ do
+            let indexCtx =
+                    constField "title" "About" `mappend`
+                    defaultContext
+
+            getResourceBody
+                >>= applyAsTemplate indexCtx
+                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= relativizeUrls
 
     match "index.html" $ do
         route idRoute

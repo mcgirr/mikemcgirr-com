@@ -9,6 +9,10 @@
 body {
     font-family: 'consola', serif;
     min-height: 100vh;
+    margin: 0px 0px 0px 0px;
+
+    /* width: available; */
+    /* height: available; */
 
     color: black;
     /* background-color: #333838; */
@@ -22,6 +26,7 @@ header {
     border-bottom: 2px solid black;
     /* border-bottom: 0.15rem solid rgba(0,0,0,0.15); */
 
+    /* TODO make the header take up the top and sides of the page */
     margin-bottom: 30px;
 
     /* top | right | bottom | left */

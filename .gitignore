@@ -17,6 +17,12 @@ cabal.sandbox.config
 # long live hpack
 mikemcgirr-com.cabal
 
+# Ignore photos
+*.jpg
+*.JPG
+*.png
+*.PNG
+
 # Ignore test builds.
 tests/Main
 _cache

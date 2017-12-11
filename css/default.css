@@ -1,9 +1,6 @@
 @font-face {
-    font-family: 'accanthis';
-    src: url('static/fonts/AccanthisADFStd-Italic.otf') format:('opentype');
-
-    font-family: 'consola';
-    src: url('static/fonts/consola.ttf') format:('truetype');
+    font-family: Lora;
+    src: url('static/fonts/Lora-Regular.ttf') format:('truetype');
 }
 
 body {
@@ -70,6 +67,8 @@ footer {
 
 h1 {
     font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h2 {
@@ -80,6 +79,32 @@ article .header {
     color: #555;
     font-size: 14px;
     font-style: italic;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Set post size in the blog posts */
+article .posts {
+    padding: 40px;
+}
+
+/* Set image size in the blog posts */
+article .posts img {
+    max-width: 100%;
+    padding: 10px;
+}
+
+/* Set image size in the blog posts */
+article .posts p {
+    font-size: 1.2em;
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 400;
+    color: #404040;
+
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .logo a {

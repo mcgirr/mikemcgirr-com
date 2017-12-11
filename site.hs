@@ -11,6 +11,11 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    -- TODO is there a better way to match recursively on directories in Hakyll?
+    match "images/table/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "static/*" $ do
         route   idRoute -- preserve directory and name
         compile copyFileCompiler -- don't alter the contents of the file

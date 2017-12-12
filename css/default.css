@@ -115,15 +115,6 @@ h1 {
     padding-right: 10px;
 }
 
-h2 {
-    font-size: 20px;
-}
-
-p {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
 code {
     font-family: "SourceCodePro-Regular";
 }
@@ -147,7 +138,7 @@ article .posts {
 /* Set image size in the blog posts */
 article .posts img {
     max-width: 100%;
-    padding: 10px;
+    padding: 5px;
 }
 
 article .posts p {

@@ -145,7 +145,6 @@ article .posts img {
     padding: 10px;
 }
 
-/* Set image size in the blog posts */
 article .posts p {
     font-family: "Lora-Regular";
     font-size: 1.2em;
@@ -153,6 +152,14 @@ article .posts p {
 
     padding-left: 20px;
     padding-right: 20px;
+}
+
+article .posts p strong {
+    font-family: "Lora-Bold";
+}
+
+article .posts p em {
+    font-family: "Lora-Italic";
 }
 
 .logo a {

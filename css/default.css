@@ -1,13 +1,11 @@
 @font-face {
     font-family: "Lora-Regular";
-    font-style: normal;
     font-weight: 400;
     src: local("Lora Regular"), url('../static/fonts/Lora-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "Lora-Italic";
-    font-style: italic;
     font-weight: 400;
     src: local("Lora Italic"), url('../static/fonts/Lora-Italic.ttf') format('truetype');
 }
@@ -19,13 +17,36 @@
 }
 
 @font-face {
+    font-family: "OpenSans-Regular";
+    font-weight: 400;
+    src: url('../static/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    font-weight: 800;
+    src: url('../static/fonts/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBoldItalic";
+    src: url('../static/fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "SourceCodePro-Regular";
+    font-weight: 800;
+    src: url('../static/fonts/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'consola';
-    src: url('../static/fonts/consola.ttf') format:('truetype');
+    src: url('../static/fonts/consola.ttf') format('truetype');
 }
 
 
 body {
-    font-family: 'consola', serif;
+    font-family: 'OpenSans-Regular', sans-serif;
     min-height: 100vh;
     margin: 0px 0px 0px 0px;
 
@@ -87,7 +108,9 @@ footer {
 }
 
 h1 {
-    font-size: 24px;
+    font-family: "OpenSans-ExtraBold";
+    font-size: 50px;
+    color: #404040;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -96,13 +119,19 @@ h2 {
     font-size: 20px;
 }
 
+code {
+    font-family: "SourceCodePro-Regular";
+}
+
 article .header {
-    color: #555;
+    font-family: "Lora-Italic";
     font-size: 14px;
     font-style: italic;
 
-    padding-left: 10px;
-    padding-right: 10px;
+    color: #555;
+
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Set post size in the blog posts */
@@ -134,16 +163,14 @@ article .posts p {
 
     float: left;
 
-    font-size: 18px;
-    font-weight: bold;
-    font-style: italic;
+    font-family: "OpenSans-ExtraBoldItalic";
+    font-size: 1.5em;
 
     /* text-shadow: 0.025em 0.025em 0 rgba(0,0,0,0.15); */
     text-decoration: none;
 
     /* To add some space between the underline and the text */
     padding: 0 2vw 0.2em 2vw;
-
 
     /* For the text underline */
     /* border-bottom: 0.15rem solid rgba(0,0,0,0.15); */

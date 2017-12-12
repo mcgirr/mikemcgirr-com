@@ -1,7 +1,28 @@
 @font-face {
-    font-family: Lora;
-    src: url('static/fonts/Lora-Regular.ttf') format:('truetype');
+    font-family: "Lora-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lora Regular"), url('../static/fonts/Lora-Regular.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: "Lora-Italic";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Lora Italic"), url('../static/fonts/Lora-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Lora-Bold";
+    font-weight: 400;
+    src: local("Lora Bold"), url('../static/fonts/Lora-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'consola';
+    src: url('../static/fonts/consola.ttf') format:('truetype');
+}
+
 
 body {
     font-family: 'consola', serif;
@@ -97,14 +118,12 @@ article .posts img {
 
 /* Set image size in the blog posts */
 article .posts p {
+    font-family: "Lora-Regular";
     font-size: 1.2em;
-    font-family: "Lora";
-    font-style: normal;
-    font-weight: 400;
     color: #404040;
 
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .logo a {

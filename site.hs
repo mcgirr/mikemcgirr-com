@@ -20,6 +20,10 @@ main = hakyll $ do
         route   idRoute -- preserve directory and name
         compile copyFileCompiler -- don't alter the contents of the file
 
+    match "static/fonts/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler

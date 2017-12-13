@@ -7,10 +7,10 @@ author: Mike McGirr
 ![The final product](/images/table/IMG_20161223_132637.jpg)
 
 The table top starts out as maple wood boards that are then cut into strips of 
-equal width.  This main seem a bit counter-intuitive since we want the height of
+equal width.  This may seem a bit counter-intuitive since we want the height of
 all the sections to be the same and we don't care about the width.
 However - eventually the pieces will be rotated so that what was *once* the width
-of a section will be it's future **height**.  Doing it this way is nice since we
+of a section will be it's future **thickness**.  Doing it this way is nice since we
 don't have to be stuck with what the original mill set the height to be. 
 
 Once all the sections have the same height (which was the reason for cutting the

@@ -37,3 +37,5 @@ _site
 
 # This is generated from the CHANGELOG
 # web/releases.markdown
+
+deploy.zsh

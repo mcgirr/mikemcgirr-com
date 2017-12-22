@@ -44,21 +44,18 @@
     src: url('../static/fonts/consola.ttf') format('truetype');
 }
 
+html {
+    min-height: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+}
 
 body {
     font-family: 'OpenSans-Regular', sans-serif;
-    min-height: 100vh;
+    height: inherit;
+    min-height: inherit;
     margin: 0px 0px 0px 0px;
-
-    /* width: available; */
-    /* height: available; */
-
     color: black;
-    /* background-color: #333838; */
-
-    /* font-size: 16px; */
-    /* margin: 0px auto 0px auto; */
-    /* width: 600px; */
 }
 
 header {
@@ -83,6 +80,12 @@ header {
     /* border: 0rem solid #000000; */
 }
 
+main {
+    /* min-height: 100%; */
+    /* height: 100%; */
+    margin: 0px 0px 0px 0px;
+}
+
 nav {
     text-align: right;
 }
@@ -99,12 +102,19 @@ nav a {
 }
 
 footer {
-    border-top: solid 2px black;
-    color: #555;
+    /* min-height: 10%; */
+
+    background-color: #FAFAFA;
     font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
     text-align: right;
+    margin-top: 30px;
+    padding: 12px 5px 12px 5px;
+}
+
+
+footer .info {
+    text-align: center;
+    font-size: 14px;
 }
 
 h1 {

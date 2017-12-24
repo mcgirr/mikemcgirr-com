@@ -24,6 +24,10 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "LICENSE" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
@@ -60,6 +64,18 @@ main = hakyll $ do
         compile $ do
             let indexCtx =
                     constField "title" "About" `mappend`
+                    defaultContext
+
+            getResourceBody
+                >>= applyAsTemplate indexCtx
+                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= relativizeUrls
+
+    match "legal.html" $ do
+        route idRoute
+        compile $ do
+            let indexCtx =
+                    constField "title" "Legal Information" `mappend`
                     defaultContext
 
             getResourceBody

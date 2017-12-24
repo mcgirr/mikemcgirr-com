@@ -162,6 +162,12 @@ article .posts p em {
     font-family: "Lora-Italic";
 }
 
+.profile-image {
+    height: 20em;
+    /* round the image corners */
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
 .logo a {
     /* The orange for the title */
     color: #ff825b;
@@ -182,12 +188,6 @@ article .posts p em {
     /* For the text underline */
     /* border-bottom: 0.15rem solid rgba(0,0,0,0.15); */
     /* line-height: 1.1em; */
-}
-
-.profile-image {
-    height: 20em;
-    /* round the image corners */
-    border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .link:hover {

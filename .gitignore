@@ -14,8 +14,13 @@ cabal.sandbox.config
 .cabal-sandbox/
 .stack-work
 
-# long live hpack
+# Ignore the cabal file because long live hpack
 mikemcgirr-com.cabal
+
+# Ignore the contents of static
+static/
+# Except for fonts in static
+!static/fonts
 
 # Ignore photos
 *.jpg

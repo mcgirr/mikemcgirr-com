@@ -24,7 +24,7 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "LICENSE" $ do
+    match "LICENSE.txt" $ do
         route   idRoute
         compile copyFileCompiler
 

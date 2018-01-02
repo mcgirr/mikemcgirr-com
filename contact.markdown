@@ -6,6 +6,7 @@ title: Contact
 <!-- like to be contacted. -->
 
 Email: mike@oatsmail.com
+
 University Email: mcgirrm@oregonstate.edu
 
 [Github page](https://github.com/mcgirr)

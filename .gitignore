@@ -17,9 +17,10 @@ cabal.sandbox.config
 # Ignore the cabal file because long live hpack
 mikemcgirr-com.cabal
 
-# Ignore the contents of static
-static/
-# Except for fonts in static
+!static/
+# Don't ignore static but ignore the contents of static
+static/*
+# Except for fonts directory in static
 !static/fonts
 
 # Ignore photos

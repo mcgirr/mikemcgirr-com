@@ -1,42 +1,42 @@
 @font-face {
     font-family: "Lora-Regular";
     font-weight: 400;
-    src: local("Lora Regular"), url('../static/fonts/Lora-Regular.ttf') format('truetype');
+    src: local("Lora Regular"), url('../static/fonts/ofl/lora/Lora-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "Lora-Italic";
     font-weight: 400;
-    src: local("Lora Italic"), url('../static/fonts/Lora-Italic.ttf') format('truetype');
+    src: local("Lora Italic"), url('../static/fonts/ofl/lora/Lora-Italic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "Lora-Bold";
     font-weight: 400;
-    src: local("Lora Bold"), url('../static/fonts/Lora-Bold.ttf') format('truetype');
+    src: local("Lora Bold"), url('../static/fonts/ofl/lora/Lora-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "OpenSans-Regular";
     font-weight: 400;
-    src: url('../static/fonts/OpenSans-Regular.ttf') format('truetype');
+    src: url('../static/fonts/apache/opensans/OpenSans-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "OpenSans-ExtraBold";
     font-weight: 800;
-    src: url('../static/fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    src: url('../static/fonts/apache/opensans/OpenSans-ExtraBold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "OpenSans-ExtraBoldItalic";
-    src: url('../static/fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    src: url('../static/fonts/apache/opensans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "SourceCodePro-Regular";
     font-weight: 800;
-    src: url('../static/fonts/SourceCodePro-Regular.ttf') format('truetype');
+    src: url('../static/fonts/ofl/sourcecodepro/SourceCodePro-Regular.ttf') format('truetype');
 }
 
 @font-face {

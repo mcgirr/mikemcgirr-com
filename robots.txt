@@ -1,0 +1,3 @@
+# A very basic initial robots.txt
+User-agent: *
+Disallow:

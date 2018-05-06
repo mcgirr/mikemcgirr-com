@@ -15,7 +15,8 @@
 # resolver:
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
-resolver: lts-9.10
+# resolver: lts-9.10
+resolver: lts-11.7
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -67,5 +68,5 @@ extra-package-dbs: []
 
 nix:
   enable: true
-  pure: true
   shell-file: shell.nix
+#   packages: [ zlib unzip ]

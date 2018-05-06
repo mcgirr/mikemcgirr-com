@@ -6,7 +6,7 @@ license: GPL-3
 
 dependencies:
   - base ==4.*
-  - hakyll ==4.9.*
+  - hakyll ==4.12.*
 
 executables:
   site:

@@ -11,7 +11,17 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
         <link rel="stylesheet" href="/css/default.css"/>
+
+        <!-- highlight.js - https://github.com/highlightjs/highlight.js -->
+        <link rel="stylesheet" href="/css/github.css"/>
+        <script type="text/javascript" src="/js/highlight.min.js"></script>
+        <script type="text/javascript" src="/js/terraform.js"></script>
+        <script type="text/javascript">
+         hljs.registerLanguage('terraform', window.hljsDefineTerraform);
+         hljs.initHighlightingOnLoad();
+        </script>
     </head>
     <body class="d-flex flex-column">
         <!-- Optional JavaScript -->
@@ -42,7 +52,7 @@
         <footer class="mt-auto">
             <div class="d-flex flex-column">
                 <div class="info p-2">
-                    Copyright Mike McGirr © 2018
+                    Copyright Mike McGirr © 2020
                 </div>
                 <div class="info p-2">
                     <a href="/legal.html">Legal details.</a>

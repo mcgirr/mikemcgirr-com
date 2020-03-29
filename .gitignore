@@ -44,4 +44,5 @@ _site
 # This is generated from the CHANGELOG
 # web/releases.markdown
 
+# Ignore the deploy helper script
 deploy.zsh

@@ -119,8 +119,31 @@ h1 {
     color: #404040;
 }
 
+h2 {
+    font-family: "OpenSans-ExtraBold";
+    font-size: 35px;
+    color: #404040;
+}
+
+h3 {
+    font-family: "OpenSans-ExtraBold";
+    font-size: 25px;
+    color: #404040;
+}
+
+
 code {
     font-family: "SourceCodePro-Regular";
+}
+
+article .posts pre {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+article .posts pre code {
+    font-size: 1.2em;
+    color: #404040;
 }
 
 article .header {
@@ -161,6 +184,13 @@ article .posts p strong {
 article .posts p em {
     font-family: "Lora-Italic";
 }
+
+article .posts ol li {
+    font-family: "Lora-Regular";
+    font-size: 1.2em;
+    color: #404040;
+}
+
 
 .profile-image {
     height: 20em;

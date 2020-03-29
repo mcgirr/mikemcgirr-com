@@ -23,11 +23,15 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "js/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["contact.markdown"]) $ do
+    match (fromList ["contact.md"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
@@ -46,7 +50,7 @@ main = hakyll $ do
             posts <- recentFirst =<< loadAll "blog/*"
             let archiveCtx =
                     listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Blog Archive"        `mappend`
+                    constField "title" "Blog Posts"          `mappend`
                     defaultContext
 
             makeItem ""

@@ -16,7 +16,12 @@
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
 # resolver: lts-9.10
-resolver: lts-11.7
+# resolver: lts-11.7
+# resolver: lts-15.9
+resolver: nightly-2020-04-24
+
+# TODO figure out why it's not in the latest LTS
+# https://github.com/jaspervdj/hakyll/issues/730 
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -69,4 +74,4 @@ extra-package-dbs: []
 nix:
   enable: true
   shell-file: shell.nix
-#   packages: [ zlib unzip ]
+  # packages: [ zlib unzip ]

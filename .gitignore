@@ -46,3 +46,6 @@ _site
 
 # Ignore the deploy helper script
 deploy.zsh
+
+# Ignore the blog TODO list (everything is perfect anyways right?)
+TODO.md

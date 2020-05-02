@@ -17,10 +17,3 @@ Mainly:
 
 - [Nix](https://nixos.org/nix/)
 - [Stack](https://docs.haskellstack.org/en/stable/README/)
-
-## Blog TODO list
-
-- Add better integration with latest Haskell tooling like ghcide or lsp compatible tools (RIP intero)
-- A better nix shell setup
-- Other TODO items in the Makefile and elsewhere 
-- Setup blog analytics and maybe a little SEO (although that's a lot of snake oil work).

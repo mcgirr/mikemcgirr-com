@@ -465,6 +465,7 @@ entirety:
 ```
 
 Since I'm using the NixOS AMI I'm importing: 
+
 `<nixpkgs/nixos/modules/virtualisation/amazon-image.nix>`
 
 This import sets a lot of the defaults we'd like to use on an AWS instance so 
@@ -472,7 +473,7 @@ it's helpful to include. If you use the official NixOS AMI this import comes
 set in the intitial `/etc/nixos/configuration.nix` file on that by default. 
 And if you'd like to explore more about what this file is composed of and what 
 it does you can find the source for it at:
-[https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/virtualisation/amazon-image.nix](https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/virtualisation/amazon-image.nix)
+[github.com/NixOS/nixpkgs/blob/master/nixos/modules/virtualisation/amazon-image.nix](https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/virtualisation/amazon-image.nix)
 
 Next `ec2.hvm = true;` is set because if you're using an ec2
 instance based on the HVM virtualization type, which I am in this project,
@@ -516,9 +517,10 @@ firewall.allowedTCPPorts = [
 ];
 ```
 
-The `services.nginx.virtualHosts."www.mikemcgirr.com".locations."/"` block 
-let's me set the root for each location being served from a nginx virtual host
-(and this is set to where I'll put the static content for my blog on the instance).
+The option:
+`services.nginx.virtualHosts."www.mikemcgirr.com".locations."/".root`
+sets the root `/` location of `www.mikemcgirr.com` for the nginx virtual host
+(this is set to where I'll eventually put the static content for my blog on the instance).
 
 And that's it really. You don't need much more than that to get a NGINX 
 server running on a NixOS based server that supports IPv6 and Let's Encrypt certs! 

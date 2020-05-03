@@ -161,9 +161,13 @@ article .header {
     padding-right: 20px;
 }
 
+/* NOTE this doesn't seem to work */
+/* section .posts { */
+/*     padding: 20px; */
+/* } */
+
 /* Set post size in the blog posts */
 article .posts {
-    /* padding: 40px; */
     padding: 20px;
 }
 
@@ -196,6 +200,17 @@ article .posts ol li {
     color: #404040;
 }
 
+/* TODO is there any reason not to put this in */
+/* the CSS selector for `code`? */
+article .posts code {
+    overflow-wrap: break-word;
+}
+
+/* TODO is there any reason not to put this in */
+/* the CSS selector for just `a?` */
+article .posts p a {
+    overflow-wrap: break-word;
+}
 
 .profile-image {
     height: 20em;

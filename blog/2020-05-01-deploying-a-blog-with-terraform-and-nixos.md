@@ -18,7 +18,7 @@ So now seemed like as good a time as ever to write a little about the setup I
 ended up creating for this.
 
 It's likely there are plenty of ways my setup could be improved,
-and I'll probably be updating this post in the future or writing a follow up posts
+and I'll probably be updating this post in the future or writing follow up posts
 as I update and improve my setup.
 
 ## Some background

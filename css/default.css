@@ -115,19 +115,22 @@ footer .info {
 
 h1 {
     font-family: "OpenSans-ExtraBold";
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: 1.7em;
     color: #404040;
 }
 
 h2 {
     font-family: "OpenSans-ExtraBold";
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: 1.5em;
     color: #404040;
 }
 
 h3 {
     font-family: "OpenSans-ExtraBold";
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 1.3em;
     color: #404040;
 }
 
@@ -142,7 +145,8 @@ article .posts pre {
 }
 
 article .posts pre code {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
+    font-size: 1.1em;
     color: #404040;
 }
 
@@ -159,7 +163,8 @@ article .header {
 
 /* Set post size in the blog posts */
 article .posts {
-    padding: 40px;
+    /* padding: 40px; */
+    padding: 20px;
 }
 
 /* Set image size in the blog posts */
@@ -170,7 +175,7 @@ article .posts img {
 
 article .posts p {
     font-family: "Lora-Regular";
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #404040;
 
     padding-left: 20px;
@@ -187,7 +192,7 @@ article .posts p em {
 
 article .posts ol li {
     font-family: "Lora-Regular";
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #404040;
 }
 

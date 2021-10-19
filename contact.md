@@ -9,8 +9,6 @@ title: Contact
 
 Email: [mike@oatsmail.com](mailto:mike@oatsmail.com)
 
-FP Complete Email: [mike@fpcomplete.com](mailto:mike@fpcomplete.com)
-
 ## Github
 
 [github.com/mcgirr](https://github.com/mcgirr)
@@ -25,6 +23,8 @@ FP Complete Email: [mike@fpcomplete.com](mailto:mike@fpcomplete.com)
 
 
 ## (Old) Graduate School Webpages
+
+(These probably no longer work)
 
 [Oregon State University](http://web.engr.oregonstate.edu/~mcgirrm/)
 

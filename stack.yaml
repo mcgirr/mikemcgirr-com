@@ -18,7 +18,7 @@
 # resolver: lts-9.10
 # resolver: lts-11.7
 # resolver: lts-15.9
-resolver: nightly-2020-04-24
+resolver: lts-16.31
 
 # TODO figure out why it's not in the latest LTS
 # https://github.com/jaspervdj/hakyll/issues/730 

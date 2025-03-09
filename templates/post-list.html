@@ -1,7 +1,7 @@
 <ul>
-    $for(posts)$
-        <li>
-            <a href="$url$">$title$</a> - $date$
-        </li>
-    $endfor$
+    {% for page in pages %}
+    <li>
+        <a href="{{ page.permalink }}">{{ page.title }}</a> - {{ page.date | date(format="%B %e, %Y") }}
+    </li>
+    {% endfor %}
 </ul>

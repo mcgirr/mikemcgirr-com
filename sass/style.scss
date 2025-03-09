@@ -1,0 +1,205 @@
+// Font faces
+@font-face {
+    font-family: "Lora-Regular";
+    font-weight: 400;
+    src: local("Lora Regular"), url('../fonts/ofl/lora/Lora-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Lora-Italic";
+    font-weight: 400;
+    src: local("Lora Italic"), url('../fonts/ofl/lora/Lora-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Lora-Bold";
+    font-weight: 400;
+    src: local("Lora Bold"), url('../fonts/ofl/lora/Lora-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    font-weight: 400;
+    src: url('../fonts/apache/opensans/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBold";
+    font-weight: 800;
+    src: url('../fonts/apache/opensans/OpenSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "OpenSans-ExtraBoldItalic";
+    src: url('../fonts/apache/opensans/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "SourceCodePro-Regular";
+    font-weight: 800;
+    src: url('../fonts/ofl/sourcecodepro/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'consola';
+    src: url('../fonts/consola.ttf') format('truetype');
+}
+
+// Base styles
+html {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'OpenSans-Regular', sans-serif;
+    height: inherit;
+    min-height: inherit;
+    margin: 0;
+    color: black;
+}
+
+header {
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    padding: 20px 12px 20px 0px;
+    background-color: #E1E2E4;
+    box-shadow: inset 0 -1rem .5rem -0.5rem rgba(0,0,0,0.1);
+}
+
+main {
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+    
+    a {
+        margin-left: 12px;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+footer {
+    background-color: #FAFAFA;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 30px;
+    padding: 12px 5px 12px 5px;
+    
+    .info {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+h1 {
+    font-family: "OpenSans-ExtraBold";
+    font-size: 1.7em;
+    color: #404040;
+}
+
+h2 {
+    font-family: "OpenSans-ExtraBold";
+    font-size: 1.5em;
+    color: #404040;
+}
+
+h3 {
+    font-family: "OpenSans-ExtraBold";
+    font-size: 1.3em;
+    color: #404040;
+}
+
+code {
+    font-family: "SourceCodePro-Regular";
+}
+
+article {
+    .posts {
+        padding: 20px;
+        
+        pre {
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            code {
+                font-size: 1.1em;
+                color: #404040;
+            }
+        }
+        
+        p {
+            font-family: "Lora-Regular";
+            font-size: 1.1em;
+            color: #404040;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            strong {
+                font-family: "Lora-Bold";
+            }
+            
+            em {
+                font-family: "Lora-Italic";
+            }
+            
+            a {
+                overflow-wrap: break-word;
+            }
+        }
+        
+        ol li {
+            font-family: "Lora-Regular";
+            font-size: 1.1em;
+            color: #404040;
+        }
+        
+        code {
+            overflow-wrap: break-word;
+        }
+        
+        img {
+            max-width: 100%;
+            padding: 5px;
+        }
+    }
+    
+    .header {
+        font-family: "Lora-Italic";
+        font-size: 14px;
+        font-style: italic;
+        color: #555;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.profile-image {
+    height: 20em;
+    border-radius: 1rem;
+}
+
+.logo a {
+    color: #ff825b;
+    float: left;
+    font-family: "OpenSans-ExtraBoldItalic";
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 0 2vw 0.2em 2vw;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.link:hover {
+    color: #63cdee;
+    text-shadow: 0 0 8px #a8e3f6;
+}

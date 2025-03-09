@@ -1,6 +1,7 @@
 +++
 title = "Migrating from Hakyll to Zola"
 date = 2025-03-09
+author = "Mike McGirr"
 [taxonomies]
 tags = ["rust", "zola", "static-site"]
 +++

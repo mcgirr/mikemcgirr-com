@@ -4,23 +4,50 @@ title = "Mike McGirr"
 description = "Personal website of Mike McGirr"
 default_language = "en"
 
-# Enable syntax highlighting
-highlight_code = true
-highlight_theme = "github"
-
 # Enable Sass processing
 compile_sass = true
-sass_output_style = "compressed"
 
 # Generate RSS feed
 generate_feed = true
 feed_filename = "rss.xml"
 
 # Taxonomies
+# The taxonomies to be rendered for the site and their configuration of the default languages
+# Example:
+#     taxonomies = [
+#       {name = "tags", feed = true}, # each tag will have its own feed
+#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no feed or pagination
+#     ]
+#
 taxonomies = [
   {name = "tags", feed = true},
   {name = "categories", feed = true},
 ]
+
+# Parse options
+[markdown]
+highlight_code = true
+
+# highlight_theme = "github"
+# NOTE I don't see this available
+
+# Whether to render emoji
+render_emoji = true
+
+# Whether external links are to be opened in a new tab
+# If this is true, a `rel="noopener"` will always automatically be added for security reasons
+external_links_target_blank = true
+
+# Whether to set rel="nofollow" for all external links
+external_links_no_follow = false
+
+# Whether to set rel="noreferrer" for all external links
+external_links_no_referrer = false
+
+# Whether smart punctuation is enabled (changing quotes, dashes, dots in their typographic form)
+smart_punctuation = false
 
 [extra]
 # Custom variables

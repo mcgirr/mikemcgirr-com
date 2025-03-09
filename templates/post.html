@@ -1,13 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
 <article>
     <section class="header">
-        Posted on $date$
-        $if(author)$
-            by $author$
-        $endif$
+        Posted on {{ page.date | date(format="%B %e, %Y") }}
+        {% if page.extra.author %}
+        by {{ page.extra.author }}
+        {% endif %}
+        {% if page.taxonomies.tags %}
+        | Tags: 
+        {% for tag in page.taxonomies.tags %}
+        <a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+        {% endif %}
     </section>
 
     <section class="posts">
-        $body$
+        {{ page.content | safe }}
     </section>
-
 </article>
+{% endblock content %}

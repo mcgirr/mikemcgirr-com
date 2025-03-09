@@ -4,16 +4,48 @@ The code for my personal website and blog.
 
 ## General details
 
-- This uses [Hakyll](https://jaspervdj.be/hakyll/) which is an excellent Haskell library for generating static sites.
-  You can find the code for that on Github [here](https://github.com/jaspervdj/hakyll)
-  and helpful docs for that [here](https://jaspervdj.be/hakyll/tutorials.html).
-- In addition to that it also uses [Bootstrap v4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) for some of the styling.
-- And the fonts I used are open source and listed in the blog's legal section.
-- If you're curious about setting up somthing similar check out the [Makefile](./Makefile).
+- This site uses [Zola](https://www.getzola.org/), a blazing fast static site generator built in Rust.
+- In addition to that it also uses [Bootstrap v4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) for some of the styling.
+- The fonts used are open source and listed in the site's legal section.
 
 ## Build requirements
 
 Mainly:
 
 - [Nix](https://nixos.org/nix/)
-- [Stack](https://docs.haskellstack.org/en/stable/README/)
+- [Zola](https://www.getzola.org/) (installed via Nix)
+- [direnv](https://direnv.net/) (optional, for automatic environment loading)
+
+## Development
+
+### Using Nix
+
+This project uses Nix for reproducible development environments:
+
+```bash
+# Enter development environment
+nix-shell
+
+# Or if using direnv (recommended)
+direnv allow
+```
+
+### Building the site
+
+```bash
+# Development server with live reloading
+make server
+
+# Build the site
+make build
+
+# Clean the public directory
+make clean
+
+# Rebuild from scratch
+make rebuild
+```
+
+### Deployment
+
+Customize the `make deploy` command in the Makefile to deploy the site according to your needs.

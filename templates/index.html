@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Welcome</h2>
+
+    <p>Welcome to my personal site. I've recently migrated from Hakyll to Zola, a fast static site generator written in Rust.</p>
+
+    <h2>Recent Posts</h2>
+    {% set section = get_section(path="blog/_index.md") %}
+    {% set pages = section.pages | slice(end=5) %}
+    {% include "post-list.html" %}
+
+    <p>For the complete list of blog posts see the <a href="{{ get_url(path="blog") }}">archives</a>.</p>
+</div>
+{% endblock content %}

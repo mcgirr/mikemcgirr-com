@@ -1,51 +1,34 @@
-# Ignore swap files and stack/cabal output.
-*.hi
-*.o
-*.aux
-*.log
-*.swo
-*.swp
-*~
+# Zola public directory (build output)
+public/
+
+# Direnv files
+.direnv/
+
+# Nix-related files
+result
+result-*
+
+# Operating system files
 .DS_Store
-TAGS
-dist
-tags
-cabal.sandbox.config
-.cabal-sandbox/
-.stack-work
-
-# Ignore the cabal file because long live hpack
-mikemcgirr-com.cabal
-
-!static/
-# Don't ignore static but ignore the contents of static
-static/*
-# Except for fonts directory in static
-!static/fonts
+Thumbs.db
 
 # Ignore photos
 *.jpg
 *.JPG
 *.png
 *.PNG
+# (You might want to track specific images with `git add -f images/specific-image.png`)
 
-# Ignore test builds.
-tests/Main
-_cache
-_store
-_site
-
-# Rest of the file: ignore examples
-# web/_cache
-# web/_site
-# web/site
-# web/reference
-
-# This is generated from the CHANGELOG
-# web/releases.markdown
+# Editor-specific files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
 
 # Ignore the deploy helper script
 deploy.zsh
+deploy.sh
 
 # Ignore the blog TODO list (everything is perfect anyways right?)
 TODO.md

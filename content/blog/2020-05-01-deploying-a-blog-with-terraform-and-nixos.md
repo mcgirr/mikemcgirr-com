@@ -1,10 +1,11 @@
----
-title: Deploying a blog to AWS with Terraform and NixOS
-author: Mike McGirr
-date: 2020-05-01
-tags: [nixos, terraform, aws, hakyll, haskell] 
-categories: Blog
----
++++
+title = "Deploying a blog to AWS with Terraform and NixOS"
+date = 2020-05-01
+author = "Mike McGirr"
+[taxonomies]
+tags = ["nixos", "terraform", "aws", "hakyll", "haskell"]
+categories = ["Blog"]
++++
 
 ## Introduction
 

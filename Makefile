@@ -1,14 +1,8 @@
 MAKEFLAGS = -s
 
-.PHONY: build site-build site-clean site-rebuild site-watch
+.PHONY: build clean server help deploy
 
 .DEFAULT_GOAL = help
-
-require-%:
-	if [ "${${*}}" = "" ]; then \
-	        echo "ERROR: Environment variable not set: \"$*\""; \
-	        exit 1; \
-	fi
 
 ## Show help screen.
 help:
@@ -23,42 +17,25 @@ help:
 	} \
 	{ lastLine = $$0 }' $(MAKEFILE_LIST)
 
-
-## Build the Hakyll Haskell project itself
+## Build the site
 build:
-	stack build
+	zola build
 
-# These commands for Hakyll documented here: https://jaspervdj.be/hakyll/tutorials/02-basics.html
-# NOTE: In general, you want to use `stack exec site build` when you just made changes to the contents of your website.
+## Clean the public directory
+clean:
+	rm -rf public
 
-## Initial Hakyll site build. This creates _site (where the goodies are) and _cache
-site-build:
-	stack exec site build
+## Start the development server
+server:
+	zola serve
 
-## removes the _site and _cache directories
-site-clean:
-	stack exec site clean
+## Rebuild the site from scratch
+rebuild: clean build
 
-## Performs a Hakyll clean and then a Hakyll build
-site-rebuild:
-	stack exec site rebuild
-
-## If you installed hakyll with a preview server (this is the default), you can use this and have a look at your site at http://localhost:8000/.
-
-## Watch for change and rebuild
-site-watch:
-	stack exec site watch
-
-# TODO this might need a script to help it (like deploy.zsh used to do)
-## A rule that uploads _site to the correct location on the server (using scp and the correct SSH key relative to this project). and then remotely reloads nginx
-# upload:
-
-# TODO
-# publish:
-# Add a rule that runs the build rule, then the site-build rule, then the upload rule
-
-# TODO (?)
-
-# clean:
-
-# destroy:
+## Deploy the site (customize this for your deployment method)
+deploy: build
+	@echo "Add your deployment commands here"
+	# Examples:
+	# rsync -avz --delete public/ user@server:/path/to/site/
+	# Or if using GitHub Pages:
+	# git subtree push --prefix public origin gh-pages

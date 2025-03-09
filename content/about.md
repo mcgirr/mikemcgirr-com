@@ -1,6 +1,7 @@
----
-title: About
----
++++
+title = "About"
+template = "page.html"
++++
 
 <div class="container p-2">
     <img class="m-3 profile-image" src="/images/head_shot.jpg"/>
@@ -20,7 +21,7 @@ title: About
     <h3>Work</h3>
     <div class="pl-2">
     <p>
-        I'm a Senior DevOps Engineer at <a href="https://www.seqster.com/">Seqster</a>.
+        I'm the Director of DevOps at <a href="https://www.seqster.com/">Seqster</a>.
     </p>
     <p>
         You can check out my full resume <a href="/static/resume.pdf">here</a>.
@@ -42,5 +43,4 @@ title: About
         Oregon in 2015.
     </p>
     </div>
-
 </div>

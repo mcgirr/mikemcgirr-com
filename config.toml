@@ -1,0 +1,29 @@
+# Basic configuration
+base_url = "https://mikemcgirr.com"
+title = "Mike McGirr"
+description = "Personal website of Mike McGirr"
+default_language = "en"
+
+# Enable syntax highlighting
+highlight_code = true
+highlight_theme = "github"
+
+# Enable Sass processing
+compile_sass = true
+sass_output_style = "compressed"
+
+# Generate RSS feed
+generate_feed = true
+feed_filename = "rss.xml"
+
+# Taxonomies
+taxonomies = [
+  {name = "tags", feed = true},
+  {name = "categories", feed = true},
+]
+
+[extra]
+# Custom variables
+author = "Mike McGirr"
+github = "https://github.com/mcgirr"
+email = "mike@oatsmail.com"

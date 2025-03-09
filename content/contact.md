@@ -1,9 +1,7 @@
----
-title: Contact
----
-
-<!-- I live in a small hut in the mountains of Kumano Kodō on Kii Hantō and would not -->
-<!-- like to be contacted. -->
++++
+title = "Contact"
+template = "page.html"
++++
 
 ## Email
 
@@ -12,14 +10,6 @@ Email: [mike@oatsmail.com](mailto:mike@oatsmail.com)
 ## Github
 
 [github.com/mcgirr](https://github.com/mcgirr)
-
-## Social Media
-
-[Twitter](https://twitter.com/McGirrMichael)
-
-## Keybase
-
-[keybase.io/mcgirr](https://keybase.io/mcgirr)
 
 
 ## (Old) Graduate School Webpages

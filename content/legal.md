@@ -1,6 +1,7 @@
----
-title: Legal Information
----
++++
+title = "Legal Information"
+template = "page.html"
++++
 
 <div class="container p-2">
     <h2>Copyright Notice</h2>
@@ -28,7 +29,7 @@ title: Legal Information
         Non-content resources include:
     </p>
     <ul>
-        <li>Haskell source code</li>
+        <li>Rust source code</li>
         <li>HTML and CSS</li>
     </ul>
 
@@ -38,17 +39,16 @@ title: Legal Information
     <p>
         <ul>
             <li>
-                This website uses <a href="https://jaspervdj.be/hakyll/">Hakyll</a>
-                a static site generator library for Haskell. Hakyll is
-                <a href="https://github.com/jaspervdj/hakyll">freely available</a>
-                and licensed under a
-                <a href="https://github.com/jaspervdj/hakyll/blob/master/LICENSE">BSD license</a>.
+                This website uses <a href="https://www.getzola.org/">Zola</a>
+                a static site generator built in Rust. Zola is
+                <a href="https://github.com/getzola/zola">freely available</a>
+                and licensed under the
+                <a href="https://github.com/getzola/zola/blob/master/LICENSE">MIT license</a>.
             </li>
             <li>
                 This website uses <a href="https://getbootstrap.com/">Bootstrap version 4</a> licensed
                 under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">MIT</a>.
             </li>
-        <!-- TODO pandoc -->
         </ul>
     </p>
 

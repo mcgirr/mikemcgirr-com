@@ -2,6 +2,7 @@
 
 {% block content %}
 <article>
+    <h1>{{ page.title }}</h1>
     <section class="header">
         Posted on {{ page.date | date(format="%B %e, %Y") }}
         {% if page.extra.author %}

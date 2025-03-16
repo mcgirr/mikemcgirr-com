@@ -17,7 +17,7 @@ Thumbs.db
 *.JPG
 *.png
 *.PNG
-# (You might want to track specific images with `git add -f images/specific-image.png`)
+# (We might want to track specific images with `git add -f images/specific-image.png`)
 
 # Editor-specific files
 *.swp
@@ -29,6 +29,9 @@ Thumbs.db
 # Ignore the deploy helper script
 deploy.zsh
 deploy.sh
+
+# Environment variables and secrets
+.env
 
 # Ignore the blog TODO list (everything is perfect anyways right?)
 TODO.md

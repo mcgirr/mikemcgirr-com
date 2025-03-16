@@ -32,10 +32,14 @@ server:
 ## Rebuild the site from scratch
 rebuild: clean build
 
-## Deploy the site (customize this for your deployment method)
+## Deploy the site using deploy.sh script
 deploy: build
-	@echo "Add your deployment commands here"
-	# Examples:
-	# rsync -avz --delete public/ user@server:/path/to/site/
-	# Or if using GitHub Pages:
-	# git subtree push --prefix public origin gh-pages
+	./deploy.sh
+
+## Deploy with verbose output
+deploy-verbose: build
+	./deploy.sh --verbose
+
+## Perform a dry run deployment (no actual changes)
+deploy-dry-run: build
+	./deploy.sh --dry-run --verbose

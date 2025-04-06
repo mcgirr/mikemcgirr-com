@@ -34,7 +34,7 @@ rebuild: clean build
 
 ## Deploy the site using deploy.sh script
 deploy: build
-	./deploy.sh
+	./deploy.sh --ssh-key $(KEY_PATH)
 
 ## Deploy with verbose output
 deploy-verbose: build

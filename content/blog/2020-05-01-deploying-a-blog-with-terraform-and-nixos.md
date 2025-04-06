@@ -394,7 +394,7 @@ generating the file from the Terraform project locally before I copy it over.
 To start, the file that is created looks like the following in its
 entirety:
 
-```nix
+```
 { config, pkgs, ... }:
 {
   imports = [
@@ -406,7 +406,7 @@ entirety:
   networking = {
     hostName = "mikemcgirr";
 
-    enableIPv6 = true; 
+    enableIPv6 = true;
 
     # Open ports in the firewall.
     firewall.allowedTCPPorts = [
@@ -510,7 +510,7 @@ for the webserver. We need to open port 80 even though we're
 forcing SSL with the line `forceSSL = true;` because Let's Encrypt needs port 80
 for the ACME challenge path.
 
-```nix
+```
 firewall.allowedTCPPorts = [
    22
    80

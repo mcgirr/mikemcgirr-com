@@ -34,6 +34,10 @@ rebuild: clean build
 
 ## Deploy the site using deploy.sh script
 deploy: build
+	./deploy.sh
+
+## Deploy with custom SSH key
+deploy-with-key: build
 	./deploy.sh --ssh-key $(KEY_PATH)
 
 ## Deploy with verbose output

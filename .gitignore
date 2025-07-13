@@ -24,7 +24,9 @@ Thumbs.db
 *.swo
 *~
 .vscode/
+*.code-workspace
 .idea/
+.claude/
 
 # Ignore the deploy helper script
 deploy.zsh
